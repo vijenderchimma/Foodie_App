@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  font-family: "Poppins";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 100px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  max-width: 90%;
+  z-index: 100;
+  top: 0;
+  left: 0;
+}
+
+.company-title {
+  font-weight: 800;
+  font-size: 25px;
+  text-decoration: none;
+  color: green;
+}
+
+/*itemsdisplay component*/
+
+.item-section {
+  margin-top: 100px;
+  display: flex;
+  width: 100%;
+}
+
+.static-images-container {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.static-images-container img {
+  width: 100%;
+}
+
+/*landing page*/
+
+.landing-section {
+  padding: 0px 200px;
+}
+
+/*chains section*/
+
+.chain-section {
+  display: flex;
+  overflow-x: hidden;
+  position: relative;
+  height: auto;
+}
+
+.loader-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.vendor-box {
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.vendor-box img {
+  width: 250px;
+  height: 180px;
+  flex: 0 0 auto;
+  margin-right: 30px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.button-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button-section button {
+  margin-right: 10px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button-icons {
+  height: 20px;
+  width: 20px;
+}
+
+
+
+/*firm collections*/
+.firm-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.firm-details {
+  padding-left: 10px;
+}
+
+.firm-group {
+  position: relative;
+}
+
+.firm-offer {
+  width: 100%;
+  max-width: 80%;
+  font-weight: 800;
+  font-size: 1rem;
+  position: absolute;
+  bottom: 6px;
+  padding-left: 20px;
+  background: transparent;
+  background: linear-gradient(to bottom, rgba(50, 0, 0, 0.08), black);
+  color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-transform: uppercase;
+}
+
+.firm-image {
+  width: 240px;
+  height: 150px;
+  flex: 0 0 auto;
+  margin-right: 35px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.firm-area {
+  color: grey;
+  font-size: small;
+}
+
+.all-buttons {
+  width: 100%;
+  max-width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+.all-buttons button {
+  background-color: blue;
+  cursor: pointer;
+  color: #ffffff;
+  margin-right: 10px;
+  border: none;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.all-buttons button:hover {
+  background-color: green;
+  border-radius: 10px;
+}
+
+/*products-section*/
+
+.products-section {
+  padding: 0 100px;
+  margin-top: 100px;
+}
+
+.product-box {
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid lightgrey;
+  padding: 10px 30px;
+  position: relative;
+}
+
+.product-group {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.product-group img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.product-group button {
+  text-align: center;
+  background-color: white;
+  color: green;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 6px;
+  width: 80px;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin-left: 10px;
+  border: 1px solid lightgray;
+}
+
+.link {
+  color: black;
+}
+
+.restaurant-name {
+  color: blue;
+  text-align: center;
+}
+
+@media (max-width:576px) {
+  .landing-section {
+    padding: 0 10px;
+  }
+
+  .navbar-section {
+    padding: 10px 20px;
+    width: 100vw;
+  }
+
+  .item-section {
+    width: 100%;
+    margin-top: 80px;
+  }
+
+  .company-title {
+    font-size: 20px;
+  }
+
+  .static-images-container {
+    margin-right: 10px;
+  }
+
+  .static-images-container img {
+    width: 30px;
+  }
+
+  .static-images-container p {
+    font-size: 10px;
+  }
+
+  h3 {
+    font-weight: 800;
+    font-size: medium;
+  }
+
+  .arrow-buttons {
+    display: flex;
+  }
+
+  .firm-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+  }
+
+  .firm-image {
+    width: 300px;
+    height: 200px;
+  }
+
+  .firm-offer {
+    width: 100%;
+    max-width: 83%;
+    position: absolute;
+  }
+
+  .all-buttons button {
+    background-color: blue;
+    cursor: pointer;
+    color: #ffffff;
+    margin-right: 5px;
+    border: none;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .products-section {
+    padding: 0 10px;
+    margin-top: 50px;
+  }
+
+  .products-section h3 {
+    text-align: center;
+  }
+}
